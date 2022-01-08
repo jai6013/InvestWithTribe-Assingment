@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signin-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: darkslategray;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.siginin-title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.signin-box form {
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategrey;
+  box-shadow: 1px 1px 15px rgb(32, 48, 48);
+  padding: 20px;
+  gap: 20px;
+  width: 450px;
+}
+
+.signin-box form input, .signin-box form select {
+  height: 50px;
+  padding: 0px;
+  text-indent: 10px;
+  /* border: 1px solid black; */
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(17, 17, 17, 0.808);
+  background-color: rgb(91, 156, 156);
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.signin-box form option {
+  background-color: rgb(149, 224, 224);
+  font-size: 16px;
+  color: rgb(32, 48, 48);
+}
+
+.signin-box form input:focus, .signin-box form select:focus {
+  outline: 2px solid whitesmoke;
+  box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.411);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signin-box form input::placeholder {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Student Dashboard */
+.student-dashboard-body {
+  display: flex;
+  justify-content: center;
 }
