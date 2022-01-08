@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gab Backend</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Welcome to Gab Backend API</h1>
+      <h2>Routes :</h2>
+
+      <h3>Users :</h3>
+      <div class="routes">
+        <div class="left">
+          <h4>Methods</h4>
+          <ol>
+            <li><code>/POST </code></li>
+            <li><code>/POST </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/DELETE </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/GET </code></li>
+          </ol>
+        </div>
+        <div class="middle">
+          <h4>Paths</h4>
+          <ol>
+            <li><code> /users/signup</code></li>
+            <li><code> /users/signin</code></li>
+            <li><code> /users/me</code></li>
+            <li><code> /users</code></li>
+            <li><code> /users/:id</code></li>
+            <li><code> /users/:id</code></li>
+            <li><code> /users/:id</code></li>
+            <li><code> /users/:id/follow</code></li>
+            <li><code> /users/:id/unfollow</code></li>
+            <li><code> /users/search?q=(search query here)</code></li>
+          </ol>
+        </div>
+        <div class="right">
+          <h4>Description</h4>
+          <ol>
+            <li>
+              <code
+                >Returns a json file which contains a token and user data</code
+              >
+            </li>
+            <li>
+              <code
+                >Returns a json file which contains a token and user data</code
+              >
+            </li>
+            <li><code>Returns logged in user details</code></li>
+            <li><code>Returns all users</code></li>
+            <li><code>Returns user by ID</code></li>
+            <li><code>Updates the user and returns the user</code></li>
+            <li><code>Deletes the user</code></li>
+            <li><code>logged in user follows the userid in params</code></li>
+            <li><code>logged in user unfollows the userid in params</code></li>
+            <li><code>Return users matching display name</code></li>
+          </ol>
+        </div>
+      </div>
+
+      <h3>Posts :</h3>
+      <div class="routes">
+        <div class="left">
+          <h4>Methods</h4>
+          <ol>
+            <li><code>/POST </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/GET </code></li>
+          </ol>
+        </div>
+        <div class="middle">
+          <h4>Paths</h4>
+          <ol>
+            <li><code> /posts</code></li>
+            <li><code> /posts/:id</code></li>
+            <li><code> /posts/:id</code></li>
+            <li><code> /posts/:id/like</code></li>
+            <li><code> /posts/:id</code></li>
+            <li><code> /posts/user/timeline</code></li>
+            <li><code> /posts/user/feed</code></li>
+          </ol>
+        </div>
+        <div class="right">
+          <h4>Description</h4>
+          <ol>
+            <li><code>To create a new post</code></li>
+            <li><code>To update a post</code></li>
+            <li><code>To delete a post</code></li>
+            <li><code>To like or dislike a post</code></li>
+            <li><code>To get a post</code></li>
+            <li><code>To get all posts of logged in user</code></li>
+            <li>
+              <code>To get all posts of followings of logged in user</code>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <h3>Groups :</h3>
+      <div class="routes">
+        <div class="left">
+          <h4>Methods</h4>
+          <ol>
+            <li><code>/POST </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/PATCH </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/GET </code></li>
+            <li><code>/DELETE </code></li>
+          </ol>
+        </div>
+        <div class="middle">
+          <h4>Paths</h4>
+          <ol>
+            <li><code> /groups</code></li>
+            <li><code> /groups/update/:id</code></li>
+            <li><code> /groups/join/:id</code></li>
+            <li><code> /groups</code></li>
+            <li><code> /groups/:id</code></li>
+            <li><code> /groups/delete/:id</code></li>
+          </ol>
+        </div>
+        <div class="right">
+          <h4>Descriptions</h4>
+          <ol>
+            <li><code>To create a new group</code></li>
+            <li><code>To update a group</code></li>
+            <li><code>To join/leave a group</code></li>
+            <li><code>To get all groups</code></li>
+            <li><code>To get a single group</code></li>
+            <li><code>To delete a group</code></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
