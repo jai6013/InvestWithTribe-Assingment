@@ -1,7 +1,8 @@
-import axios from "axios";
 import { React, useState } from "react";
-import ajax from 'ajax'
-const SignIn = () => {
+import axios from "axios";
+
+
+const SignUp = () => {
     
     const initState = {
         username: "",
@@ -29,7 +30,7 @@ const SignIn = () => {
         <>
             <div className="signin-container">
                 <div className="signin-box">
-                    <div className="siginin-title">Sign In</div>
+                    <div className="siginin-title">Sign Up</div>
                     <form onSubmit = {handleRegister}>
                     <input type="text" name="username" onChange={handleInput} placeholder="Enter Username" />
                     <input type="text" name="email" onChange={handleInput} placeholder="Enter Email" />
@@ -42,4 +43,4 @@ const SignIn = () => {
     );
 }
 
-export { SignIn };
+export { SignUp };
